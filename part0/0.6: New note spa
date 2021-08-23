@@ -1,0 +1,8 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+server-->browser: 201 Status Code w/ response body "message created"
+
+note over browser:
+browser executes the event handler for the notes_form
+on submit it pushes the new note to the colelction and
+then redraws the notes on the single html page before
+sending to server in a POST request
